@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CH SAI SASANK - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #002b5b;
+      --accent: #ffc107;
+      --bg: #f0f2f5;
+      --text: #2e2e2e;
+      --card-bg: #ffffff;
+      --shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1080px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 8px;
+    }
+
+    .about img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--primary);
+      color: #fff;
+      padding: 20px 10px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      nav ul {
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CH SAI SASANK</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Internships</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <img src="C:\Users\DELL\Documents\CHAGANTI SAI SASANK_ Portfolio\enhanced_image_4k_advanced.jpeg" alt="CHAGANTISAISASANK" />
+      <p>
+        Highly motivated and detail-oriented professional with a strong foundation in software development, data analysis, and machine learning. Proficient in Python, Java, and SQL, with experience in tools like Power BI, TensorFlow, and Hadoop. Looking for an entry-level role to apply my skills in a collaborative, innovative environment.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><strong>Languages:</strong><br> C, C++, Python, Java, HTML5, CSS3, JavaScript, SQL</div>
+        <div class="card"><strong>Tools:</strong><br> VS Code, Jupyter, GitHub, Power BI, Google Colab</div>
+        <div class="card"><strong>Frameworks:</strong><br> TensorFlow, Keras, Scikit-learn</div>
+        <div class="card"><strong>Domains:</strong><br> Data Science, Machine Learning, Deep Learning</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card"><h3>Food Vault Web App</h3><p>Responsive web app for discovering and sharing recipes using HTML5, CSS3, and JavaScript.</p></div>
+        <div class="card"><h3>Liver Disease Prediction</h3><p>Machine learning project for accurate prediction and analysis of liver conditions.</p></div>
+        <div class="card"><h3>YouTube Data Analysis</h3><p>Analyzed YouTube metrics using Hadoop, MapReduce, and R for trend insights.</p></div>
+        <div class="card"><h3>Sudoku Solver AI</h3><p>Developed an AI solution using Simulated Annealing to solve Sudoku puzzles.</p></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Internships</h2>
+      <div class="grid">
+        <div class="card"><h3>SmartBridge</h3><p><strong>Role:</strong> Data Analytics Intern (Dec 2023 - Apr 2024)<br>Created interactive Tableau dashboards for data-driven insights.</p></div>
+        <div class="card"><h3>Finlatics</h3><p><strong>Role:</strong> ML Intern (Dec 2024 - Mar 2025)<br>Developed predictive models using financial datasets.</p></div>
+        <div class="card"><h3>Eduskills</h3><p><strong>Role:</strong> Academic Intern (Dec 2022 - Mar 2024)<br>Assisted in cloud and machine learning education programs.</p></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card"><h3>SRM University AP</h3><p>M.Tech in Data Science (2024–2026)<br>CGPA: 8.31/10</p></div>
+        <div class="card"><h3>Pragati Engineering College</h3><p>B.Tech in CSE (2020–2024)<br>CGPA: 7.78/10</p></div>
+        <div class="card"><h3>Narayana Junior College</h3><p>Intermediate - MPC (2018–2020)<br>CGPA: 8.46/10</p></div>
+        <div class="card"><h3>Aditya Public(E.M) High School</h3><p>10th Grade (2017–2018)<br>CGPA: 9.5/10</p></div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Certifications</h2>
+      <ul>
+        <li>IBM – Data Analysis with Python</li>
+        <li>HackerRank – Python Programming</li>
+        <li>AWS – Cloud Practitioner (Global)</li>
+        <li>Google – Associate Cloud Engineer</li>
+        <li>Be10X – AI Tools</li>
+        <li>Great Learning – Power BI</li>
+        <li>NPTEL – Soft Skills Certification</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:saisasankchaganti@gmail.com">saisasankchaganti@gmail.com</a></p>
+      <p><strong>Linktree:</strong> <a href="https://linktr.ee/SAISASANKCHAGANTI" target="_blank">View All Links</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Sasank-02" target="_blank">Sasank-02</a></p>
+      <p><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/chaganti-sai-sasank-921a3520b" target="_blank">Chaganti Sai Sasank</a></p>
+      <p><strong>LeetCode:</strong> <a href="https://leetcode.com/u/CHAGANTISAISASANK/" target="_blank">CHAGANTISAISASANK</a></p>
+      <p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/CHSAISASANK" target="_blank">CHSAISASANK</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CH SAI SASANK. All rights reserved.</p>
+  </footer>
+</body>
+</html>
